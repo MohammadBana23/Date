@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src = "main.js"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
     <div class="container">
-        <h1> First</h1><br/>
-        <label for="year">yy :</label>
-        <input type="number" id="year" placeholder="yy">
+        <h1> First</h1><br />
+        <div class="first">
+            <label for="year">yy :</label>
+            <input type="number" id="firstYear" placeholder="yy" value="">
 
-        <label for="month">mm :</label>
-        <input type="number" id="month" placeholder="mm">
+            <label for="month">mm :</label>
+            <input type="number" id="firstMonth" placeholder="mm" value="">
 
-        <label for="day">dd :</label>
-        <input type="number" id="day" placeholder="dd"><br>
+            <label for="day">dd :</label>
+            <input type="number" id="firstDay" placeholder="dd" value=""><br>
+        </div>
 
-        <hr class="line"></hr>
+        <hr class="line">
+        </hr>
 
-        <h1> Second</h1><br/>
-        <label for="year">yy :</label>
-        <input type="number" id="year" placeholder="yy">
+        <h1> Second</h1><br />
+        <div class="second">
+            <label for="year">yy :</label>
+            <input type="number" id="secondYear" placeholder="yy">
 
-        <label for="month">mm :</label>
-        <input type="number" id="month" placeholder="mm">
+            <label for="month">mm :</label>
+            <input type="number" id="secondMonth" placeholder="mm" value="">
 
-        <label for="day">dd :</label>
-        <input type="number" id="day" placeholder="dd"><br>
+            <label for="day">dd :</label>
+            <input type="number" id="secondDay" placeholder="dd" value=""><br>
+        </div>
 
-        <hr class="line"></hr>
+        <hr class="line">
+        </hr>
 
-        <button id = "compuite" type="button">Compuite</button>
+        <button id="compuite" type="button" onclick="clickButtom()">Compuite</button><br><br>
+        <label for="during">during is : </label>
+        <h2 id="during"></h2>
     </div>
-    
+
 </body>
+
 </html>
