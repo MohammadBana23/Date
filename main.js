@@ -5,7 +5,7 @@ function clickButtom() {
     let secondYear = parseInt(document.getElementById("secondYear").value);
     let secondMonth = parseInt(document.getElementById("secondMonth").value);
     let secondDay = parseInt(document.getElementById("secondDay").value);
-    let during = document.getElementById("during");
+    let during = document.getElementById("timeDifference");
 
     let finalYear = secondYear - firstYear;
     let finalMonth = secondMonth - firstMonth;
