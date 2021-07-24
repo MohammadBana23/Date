@@ -5,7 +5,7 @@ function clickButtom() {
     let secondYear = parseInt(document.getElementById("secondYear").value);
     let secondMonth = parseInt(document.getElementById("secondMonth").value);
     let secondDay = parseInt(document.getElementById("secondDay").value);
-    let during = document.getElementById("timeDifference");
+    let during = document.getElementById("during");
 
     let finalYear = secondYear - firstYear;
     let finalMonth = secondMonth - firstMonth;
@@ -36,16 +36,15 @@ function clickButtom() {
     else if (secondDay >= 31) {
         alert("the day should be between 1 to 30");
     } else {
-        if (finalMonth < 0){
-            finalYear -= 1 ;
-            finalMonth = 12 + finalMonth;
-        }
         if(finalDay < 0){
             finalMonth -= 1 ;
             finalDay = 30 + finalDay ;
         }
+        if (finalMonth < 0){
+            finalYear -= 1 ;
+            finalMonth = 12 + finalMonth;
+        }
+        console.log(during.innerHTML);
         during.innerHTML = finalYear + " years and " + finalMonth + " month and " + finalDay + " day";
     }
-
-    console.log(typeof firstMonth);
 }
